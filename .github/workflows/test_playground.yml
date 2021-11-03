@@ -1,0 +1,16 @@
+name: Test PlayGround 
+
+on: [push]
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    name: Test unittest
+    steps:
+      - uses: actions/checkout@v2
+      - name: set up python 3.8 
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9 
+      - run: ./tests/playground.sh
+
