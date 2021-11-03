@@ -1,4 +1,4 @@
-
+import unittest
 
 
 
@@ -16,6 +16,6 @@ def bubble_sort(array):
         i +=1
 
 a = [12, 200, 1, 3000, 30023, 123, 12]
+b = [1, 12, 12, 123, 200, 3000, 30023]
 bubble_sort(a)
-print(a)
-
+assert a == b
