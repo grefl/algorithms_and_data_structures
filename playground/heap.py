@@ -55,6 +55,4 @@ b.sort()
 
 h = Heap(len(a))
 h.sort(a)
-print(a)
-print(b)
 assert a == b
